@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.onehippo.cms7</groupId>
+    <artifactId>hippo-cms7-release</artifactId>
+    <version>7.9.1</version>
+  </parent>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <name>hippo-catalog</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <hippo.maven.plugin.version>0.1.2</hippo.maven.plugin.version>
+    <hippo.prototype.version>7.9.35-SNAPSHOT</hippo.prototype.version>
+    <jcr.mock.version>1.0-SNAPSHOT</jcr.mock.version>
+    <junit.version>4.11</junit.version>
+    <easymock.version>3.2</easymock.version>
+  </properties>
+<!-- 
+  <scm>
+    <connection></connection>
+    <developerConnection></developerConnection>
+    <url></url>
+  </scm>
+ -->
+
+  <distributionManagement>
+    <repository>
+      <id>openweb-nexus-releases</id>
+      <url>https://nexus.open-web.nl/nexus/content/repositories/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>openweb-nexus-snapshots</id>
+      <url>https://nexus.open-web.nl/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>hippo</id>
+      <name>Hippo maven 2 repository.</name>
+      <url>http://maven.onehippo.com/maven2/</url>
+    </repository>
+    <repository>
+      <id>sf-hippo-prototype-repo</id>
+      <name>Hippo prototype repository.</name>
+      <url>http://svn.code.sf.net/p/hippoprototype/code/maven2/</url>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>sf-hippo-maven-plugin-repo</id>
+      <name>Hippo maven plugin repository.</name>
+      <url>http://svn.code.sf.net/p/mavenhippo/code/maven2/</url>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>sf-hst-mixin-support</id>
+      <name>HST mixin support module repository.</name>
+      <url>http://svn.code.sf.net/p/hstmixinsupport/code/maven2/</url>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>sf-hippo-common-tools-repo</id>
+      <name>Hippo common tools repository.</name>
+      <url>https://svn.code.sf.net/p/hippocommontool/code/</url>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.tdclighthouse.hippo</groupId>
+        <artifactId>hippo-prototype-frontend</artifactId>
+        <version>${hippo.prototype.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <version>${easymock.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>nl.openweb.jcr</groupId>
+        <artifactId>jcr-mock</artifactId>
+        <version>${jcr.mock.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.aharpour.ebrahim</groupId>
+          <artifactId>hippo-maven-plugin</artifactId>
+          <version>${hippo.maven.plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+
+</project>

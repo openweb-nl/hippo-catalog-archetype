@@ -1,0 +1,35 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<sv:node sv:name="${widgetNameLowercased}" xmlns:sv="http://www.jcp.org/jcr/sv/1.0">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>hst:containeritempackage</sv:value>
+  </sv:property>
+  <sv:property sv:name="jcr:uuid" sv:type="String">
+    <sv:value>b6063246-a434-4836-8922-9d13bfcc1cb9</sv:value>
+  </sv:property>
+  <sv:node sv:name="${widgetNameLowercased}">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>hst:containeritemcomponent</sv:value>
+    </sv:property>
+    <sv:property sv:name="jcr:uuid" sv:type="String">
+      <sv:value>1f78346d-e097-4a57-8d3b-01bea79dc15c</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:componentclassname" sv:type="String">
+      <sv:value>${groupId}.components.${widgetName}</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:iconpath" sv:type="String">
+      <sv:value>images/${widgetNameLowercased}/${widgetNameLowercased}-list.png</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:label" sv:type="String">
+      <sv:value>${widgetName}</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:template" sv:type="String">
+      <sv:value>${widgetNameLowercased}-template</sv:value>
+    </sv:property>
+    <sv:property sv:name="hst:xtype" sv:type="String">
+      <sv:value>HST.Item</sv:value>
+    </sv:property>
+  </sv:node>
+</sv:node>

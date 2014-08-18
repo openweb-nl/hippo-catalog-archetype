@@ -1,0 +1,13 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<short-name>${namespace}</short-name>
+	<uri>http://open-web.nl/hippo/${namespace}</uri>
+	<jsp-version>2.0</jsp-version>
+	<tag-file>
+		<name>${namespace}</name>
+		<path>/META-INF/tags/${namespace}.tag</path>
+	</tag-file>
+</taglib>
