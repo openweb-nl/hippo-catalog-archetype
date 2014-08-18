@@ -1,0 +1,2 @@
+hippo-catalog-archetype
+=======================
