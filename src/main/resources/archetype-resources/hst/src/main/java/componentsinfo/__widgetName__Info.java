@@ -1,7 +1,7 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${groupId}.componentsinfo;
+package ${package}.componentsinfo;
 
 import net.sourceforge.hstmixinsupport.annotations.JcrPath;
 import net.sourceforge.hstmixinsupport.annotations.Mixin;

@@ -7,7 +7,7 @@
 	<uri>http://open-web.nl/hippo/${namespace}</uri>
 	<jsp-version>2.0</jsp-version>
 	<tag-file>
-		<name>${namespace}</name>
-		<path>/META-INF/tags/${namespace}.tag</path>
+		<name>${widgetNameLowercased}</name>
+		<path>/META-INF/tags/${widgetNameLowercased}.tag</path>
 	</tag-file>
 </taglib>

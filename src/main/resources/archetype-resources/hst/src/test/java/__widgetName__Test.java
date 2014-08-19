@@ -1,14 +1,14 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${groupId};
+package ${package};
 
 import java.util.Map;
 
 import javax.servlet.ServletContext;
 
-import ${groupId}.components.${widgetName};
-import ${groupId}.componentsinfo.${widgetName}Info;
+import ${package}.components.${widgetName};
+import ${package}.componentsinfo.${widgetName}Info;
 
 import org.easymock.EasyMock;
 import org.hippoecm.hst.core.component.HstComponentException;

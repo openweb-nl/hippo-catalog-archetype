@@ -1,14 +1,14 @@
 #set( $symbol_pound = '#' )
 #set( $symbol_dollar = '$' )
 #set( $symbol_escape = '\' )
-package ${groupId}.components;
+package ${package}.components;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.jcr.RepositoryException;
 
-import ${groupId}.componentsinfo.${widgetName}Info;
+import ${package}.componentsinfo.${widgetName}Info;
 
 import org.hippoecm.hst.component.support.bean.BaseHstComponent;
 import org.hippoecm.hst.content.beans.standard.HippoBean;
