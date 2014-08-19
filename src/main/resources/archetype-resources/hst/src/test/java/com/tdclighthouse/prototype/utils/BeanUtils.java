@@ -5,7 +5,7 @@ package com.tdclighthouse.prototype.utils;
 
 import javax.jcr.RepositoryException;
 
-import ${groupId}.componentsinfo.${widgetName}Info;
+import ${package}.componentsinfo.${widgetName}Info;
 
 import org.hippoecm.hst.content.beans.standard.HippoBean;
 import org.hippoecm.hst.content.beans.standard.HippoDocument;
