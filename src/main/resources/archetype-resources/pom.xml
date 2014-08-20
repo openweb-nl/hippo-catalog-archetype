@@ -125,15 +125,19 @@
   </dependencyManagement>
 
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>com.aharpour.ebrahim</groupId>
-          <artifactId>hippo-maven-plugin</artifactId>
-          <version>${hippo.maven.plugin.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+    <resources>
+      <resource>
+		<directory>src/main/java</directory>
+		<filtering>false</filtering>
+		<includes>
+			<include>**/*.ftl</include>
+		</includes>
+	 </resource>
+	 <resource>
+		<directory>src/main/resources</directory>
+		<filtering>true</filtering>
+	</resource>
+    </resources>
   </build>
 
 
