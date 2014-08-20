@@ -73,10 +73,10 @@
       <sv:value>30054</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentresource" sv:type="String">
-      <sv:value>hst/configurations/default/${widgetNameLowercased}/${widgetNameLowercased}.xml</sv:value>
+      <sv:value>hst/configurations/default/catalog/${widgetNameLowercased}.xml</sv:value>
     </sv:property>
     <sv:property sv:name="hippo:contentroot" sv:type="String">
-      <sv:value>/hst:hst/hst:configurations/hst:default/hst:${widgetNameLowercased}</sv:value>
+      <sv:value>/hst:hst/hst:configurations/hst:default/hst:catalog</sv:value>
     </sv:property>
   </sv:node>
 </sv:node>
